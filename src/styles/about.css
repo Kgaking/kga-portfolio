@@ -1,0 +1,113 @@
+.body{
+    overflow-x: hidden;
+}
+:root{
+    --bg-color: #1f242d;
+    --text-color: #fff;
+    --second-bg-color:#323946;
+    --main--color:rgb(150, 2, 255);
+}
+
+.about-img{
+    display: flex;
+    /* margin-left: 10rem; */
+    position: absolute;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 35%;
+    
+}
+
+.about-img img{
+    width: 20rem;
+    height: 25rem;
+    /* border-radius: 50%; */
+    justify-content: center;
+    align-items: center;
+    /* border: .2rem solid var(--main--color); */
+}
+
+.about-img .circle-spin{
+    position: absolute;
+    top: 8rem;
+    left: 10.555rem;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid var(--main--color);
+    border-right: .2rem solid var(--main--color);
+    animation: Spinner 2s alternate-reverse linear infinite;
+}
+
+@keyframes Spinner {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+        border-top:.2rem solid  transparent;
+    }
+}
+@media (max-width:1100px){
+    .about-img{
+        margin: 7rem;
+    }
+    .about-img img{
+        width: 13rem;
+        height: 15rem;
+        margin-left: 130%;
+        margin-top: -2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img .circle-spin{
+        /* position: absolute; */
+        top:4.7rem;
+        left: 7rem;
+        margin-top: -2.5rem;
+        margin-left: 130%;
+        width: 12rem;
+        height: 12rem;
+    }
+}
+@media (max-width:750px){
+    .about-img{
+        margin: 7rem;
+    }
+    .about-img img{
+        width: 13rem;
+        height: 15rem;
+        margin-left: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img .circle-spin{
+        position: absolute;
+        top:4.7rem;
+        margin-left: 5rem;
+        /* left:1rem; */
+        width: 12rem;
+        height: 12rem;
+    }
+}
+@media (max-width:450px){
+    .about-img{
+        margin: 7rem;
+    }
+    .about-img img{
+        width: 13rem;
+        height: 15rem;
+        margin-left: -1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img .circle-spin{
+        position: absolute;
+        top:4.7rem;
+        margin-left: -1rem;
+        /* left:1rem; */
+        width: 12rem;
+        height: 12rem;
+    }
+}

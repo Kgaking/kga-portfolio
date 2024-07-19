@@ -1,0 +1,136 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+:root{
+    --bg-color: #1f242d;
+    --text-color: #fff;
+    --second-bg-color:#323946;
+    --main--color:rgb(150, 2, 255);
+}
+
+.project h2{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+}
+.project h2 span{
+    color: var(--main--color);
+    box-shadow: 0 0 0;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.project-box img{
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+    transition: .5s ease;
+}
+.project-box:hover img{
+    transform: scale(1.1);
+    }
+
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--main--color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0%);
+    }
+
+
+.project-layer h4{
+    font-size: 2rem;
+}
+
+.project-layer p{
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+}
+
+.project-layer .link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+    text-decoration: none;
+}
+.project-layer .btns{
+    display: flex;
+    gap: 1rem;
+}
+.link:hover:nth-child(1){
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+.link:hover:nth-child(2){
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.project-layer .link i {
+    font-size: 1rem;
+    color: var(--second-bg-color);
+}
+@media (max-width:1100px) {
+    .project h2{
+        font-size: 3rem;
+    }
+
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 2.5rem;
+        margin-bottom: 10rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+}
+@media (max-width:750px) {
+    .project-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        margin-bottom: 15rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+}

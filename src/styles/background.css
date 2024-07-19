@@ -1,0 +1,19 @@
+#bg{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.shadow-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -4;
+    /* background-color: rgba(0,0,0,0.7); */
+}
