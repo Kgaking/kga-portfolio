@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import Typed from 'typed.js'
-import resume from "../assets/CV_KG_Aniruddha_ENG21CS0172.pdf"
+import resume from "../assets/CV_KG_ANIRUDDHA-ENG21CS0172.pdf"
 // import video from "../assets/Home.mp4"
 
 // import homeimg from "../assets/Home.png"
